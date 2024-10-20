@@ -111,9 +111,9 @@ ul.bullets li {
 
 .pfp {
     width: 100%;
-    max-width: 300px;
+    max-width: 450px;
     height: auto;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 .educational {
@@ -165,6 +165,21 @@ ul.bullets li {
     justify-content: center;
     align-items: center;
 }
+
+.zoom {
+    padding: 10px;
+    background-color: transparent;
+    transition: transform .2s;
+    width: 200px; 
+    height: auto;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    transform: scale(1.5); 
+}
+
 
 .work {
     margin: 50px 10%;
