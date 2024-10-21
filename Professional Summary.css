@@ -111,9 +111,9 @@ ul.bullets li {
 
 .pfp {
     width: 100%;
-    max-width: 300px;
+    max-width: 450px;
     height: auto;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 .educational {
@@ -126,6 +126,47 @@ ul.bullets li {
     backdrop-filter: blur(6.6px);
     -webkit-backdrop-filter: blur(6.6px);
 }
+
+.bullets {
+    list-style-type: disc; /* Ensure bullets are displayed */
+    padding-left: 20px; /* Adjust padding for bullets */
+}
+
+.hover-title {
+    display: inline; /* Make the title inline to stay with the bullet */
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.hover-image {
+    visibility: hidden;
+    display: none; /* Hide the image initially */
+}
+
+body:not(.mobile) .hover-title:hover + .hover-image {
+    visibility: visible;
+    display: flex; /* Show the image on hover */
+    pointer-events: none;
+}
+
+.hover-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 90vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
 
 .educontent {
     display: flex;
@@ -165,6 +206,21 @@ ul.bullets li {
     justify-content: center;
     align-items: center;
 }
+
+.zoom {
+    padding: 10px;
+    background-color: transparent;
+    transition: transform .2s;
+    width: 200px; 
+    height: auto;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    transform: scale(1.5); 
+}
+
 
 .work {
     margin: 50px 10%;
