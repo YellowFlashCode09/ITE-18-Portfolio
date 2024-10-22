@@ -102,6 +102,12 @@ body {
     align-items: center;
 }
 
+.tphoto {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
 .subhead {
     font-size: 18px;
     color: #9C9C9C;
