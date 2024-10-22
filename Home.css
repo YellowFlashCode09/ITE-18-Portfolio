@@ -97,7 +97,7 @@ body {
 }
 
 /* Content Sections */
-.content1, .content2, .Profiles {
+.content1, .content2 {
     padding: 50px 10%;
     padding-bottom: 10px;
 }

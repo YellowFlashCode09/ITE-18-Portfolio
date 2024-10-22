@@ -137,11 +137,18 @@ p {
     gap: 20px;
 }
 
-.vid {
+.pfp {
     width: 100%;
     max-width: 150px;
     height: auto;
+    transition: transform .2s;
 }
+
+.pfp:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    transform: scale(1.5); 
+}
+
 
 .btcontact {
     border: solid rgb(98, 186, 27);

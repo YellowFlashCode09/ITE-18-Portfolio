@@ -110,10 +110,10 @@ ul.bullets li {
 }
 
 .pfp {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    margin-right: 150px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 50px;
 }
 
 .educational {
@@ -128,42 +128,33 @@ ul.bullets li {
 }
 
 .bullets {
-    list-style-type: disc; /* Ensure bullets are displayed */
-    padding-left: 20px; /* Adjust padding for bullets */
-}
-
-.hover-title {
-    display: inline; /* Make the title inline to stay with the bullet */
-    pointer-events: auto;
-    cursor: pointer;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .hover-image {
-    visibility: hidden;
-    display: none; /* Hide the image initially */
-}
-
-body:not(.mobile) .hover-title:hover + .hover-image {
-    visibility: visible;
-    display: flex; /* Show the image on hover */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    justify-content: center;
+    align-items: start;
     pointer-events: none;
 }
 
-.hover-image {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    width: 90vw;
-    height: 90vh;
-    justify-content: center;
-    align-items: center;
+body:not(.mobile) .hover-title:hover + .hover-image {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .hover-image img {
     width: 100%;
-    max-width: 450px;
+    max-width: 600px;
     height: auto;
 }
 
