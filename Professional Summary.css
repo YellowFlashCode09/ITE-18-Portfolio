@@ -36,11 +36,17 @@ body {
     padding-top: 20px;
 }
 
+.socmed1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .socmed1 img {
     width: 30px;
     height: 30px;
-    margin-left: 60px;
-    padding-top: 20px;
+    margin-left: 20px; /* Reduced margin for better spacing */
+    padding-top: 0;
     cursor: pointer;
 }
 
