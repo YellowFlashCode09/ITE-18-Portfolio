@@ -1,4 +1,4 @@
-/* Global Styles */
+    /* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -97,7 +97,7 @@ body {
 }
 
 /* Content Sections */
-.content1, .content2 {
+.content1, .content2, .Profiles {
     padding: 50px 10%;
     padding-bottom: 10px;
 }
@@ -121,12 +121,24 @@ body {
     width: 100%;
     max-width: 300px;
     height: auto;
+    transition: transform .2s;
+}
+
+.pm:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    transform: scale(1.5); 
 }
 
 .c {
     width: 100%;
     max-width: 100px;
     height: auto;
+    transition: transform .2s;
+}
+
+.c:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    transform: scale(1.5); 
 }
 
 /* Footer */
